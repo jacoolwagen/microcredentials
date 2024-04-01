@@ -1,0 +1,70 @@
+.help-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #68beca, #e3edda);
+    background-attachment: fixed;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.help-title, .section-title {
+    color: #333; /* Dark grey for better readability */
+    margin-bottom: 20px;
+}
+
+.help-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    font-size: 24px; /* Larger font size for section titles */
+}
+
+.terms-list dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.terms-list dd {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.sub-section {
+    margin-bottom: 20px;
+}
+
+.sub-section h3 {
+    font-size: 20px; /* Slightly smaller than section titles */
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+.additional-info {
+    font-style: italic;
+    color: #666; /* Lighter grey for less critical information */
+}
+
+
+.navigation-buttons {
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: rgba(37, 76, 221, 0.5); /* #254cdd with 50% opacity */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+.nav-button:hover {
+    background-color: rgba(37, 76, 221, 0.6); /* Slightly less transparent on hover for visual feedback */
+}

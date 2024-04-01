@@ -1,0 +1,202 @@
+/* Minter.module.css */
+
+:root {
+  /* New color scheme based on provided hex codes */
+  --primary-color: #00539C; /* Royal Blue */
+  --secondary-color: #EEA47F; /* Peach */
+
+  /* Complementary colors for the scheme */
+  --background-color: #f0f0f0; /* A very light gray for the background */
+  --text-color: #333333; /* A dark gray for text that ensures readability */
+  --text-secondary-color: #555555; /* A slightly lighter gray for secondary text */
+  --input-border-color: #cccccc; /* A neutral, light border color for inputs */
+  --button-hover-color: #003366; /* A darker shade of Royal Blue for button hover state */
+  --success-color: #4BB543; /* A success message green */
+  --error-color: #FF0000; /* A standard error message red */
+}
+
+.minter {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  background: linear-gradient(to bottom, #68beca,#e3edda); 
+  color: var(--text-color);
+}
+.walletHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.walletHeader img {
+  height: 50px; /* Adjust based on your logo's aspect ratio */
+}
+  
+  .walletButton {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .walletButton:hover {
+    background-color: #43a047;
+  }
+  
+  .formContainer {
+    text-align: center;
+    width: 100%; /* Ensures the container takes full width */
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .instructions {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .mintForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Ensures form takes full width of its container */
+  }
+  
+  .formField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .formLabel {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--text-secondary-color);
+  }
+  
+  .formInput {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .formInput:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+  }
+  
+  .mintButton {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mintButton:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  .statusFooter {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .statusMessage {
+    background-color: var(--background-color);
+    border-left: 4px solid var(--success-color);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    color: var(--text-color);
+  }
+  
+  .statusMessage.error {
+    border-color: var(--error-color);
+  }
+  
+  .statusMessage.success {
+    border-color: var(--success-color);
+  }
+  
+  .credit {
+    font-size: 0.9rem;
+    color: var(--text-secondary-color);
+    margin-top: 20px;
+  }
+  
+  .logo {
+    /* Adjust the height and width as needed */
+    height: 26px;
+    max-width: 200px; /* Example max-width for the logo */
+    /* Center the logo if it's a block element */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navigationButtons {
+    margin-bottom: 20px;
+    /* Additional styling */
+}
+
+.navButton {
+  background-color: rgba(37, 76, 221, 0.5); /* #254cdd with 50% opacity */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+}
+
+.navButton:hover {
+  background-color: rgba(37, 76, 221, 0.6); /* Slightly less transparent on hover for visual feedback */
+}
+
+.imagePicker {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px; /* Adjust gap between images as needed */
+}
+
+.imagePicker img {
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Smooth scaling transition */
+  transform: scale(0.85); /* Scale down images to 50% of their original size */
+}
+
+.imagePicker img:hover {
+  transform: scale(0.9); /* Slightly enlarge images on hover for a better interactive effect */
+}
+
+.selectedImage {
+  border: 3px solid blue; /* Highlight color for selected image */
+  transform: scale(0.9); /* Slightly enlarge and highlight the selected image */
+}
+
+  

@@ -1,0 +1,46 @@
+/* MainPage.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif; /* Using a standard font, but you can choose any */
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh; /* Full viewport height */
+  background-image: url('C:\projects\certminter\src\images\forest_main_back.png'); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent background for nav links */
+  box-sizing: border-box;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-left: 20px;
+  border-radius: 4px;
+  color: #FFFFFF; /* White text color */
+  background-color: #00539C; /* Royal Blue background */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #EEA47F; /* Peach background on hover */
+  color: #00539C; /* Royal Blue text on hover */
+}
+
+/* You can add more styles below as needed */
